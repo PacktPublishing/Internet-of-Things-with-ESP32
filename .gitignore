@@ -1,0 +1,10 @@
+*.zip
+bin/
+*.o
+*.a
+*.tmp
+tmp/
+*#
+.pio/
+.vscode/
+code/ch5/ota_update_ex/server/

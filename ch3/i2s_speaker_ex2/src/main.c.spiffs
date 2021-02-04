@@ -1,0 +1,44 @@
+
+#include <stdio.h>
+#include <sys/stat.h>
+#include "esp_spiffs.h"
+#include "esp_err.h"
+
+void app_main(void)
+{
+    printf("Initializing SPIFFS\n");
+
+    esp_vfs_spiffs_conf_t conf = {
+        .base_path = "/spiffs",
+        .partition_label = NULL,
+        .max_files = 5,
+        .format_if_mount_failed = true};
+
+    esp_err_t ret = esp_vfs_spiffs_register(&conf);
+    if (ret != ESP_OK)
+    {
+        printf("Failed to initialize SPIFFS (%s)\n", esp_err_to_name(ret));
+        return;
+    }
+
+    size_t total = 0, used = 0;
+    ret = esp_spiffs_info(conf.partition_label, &total, &used);
+    if (ret == ESP_OK)
+    {
+        printf("Partition size: total: %d, used: %d\n", total, used);
+    }
+    else
+    {
+        printf("Failed to get SPIFFS partition information (%s)\n", esp_err_to_name(ret));
+    }
+
+    struct stat st;
+    if (stat("/spiffs/rooster.wav", &st) == 0)
+    {
+        printf(">> rooster.wav found. %ld\n", st.st_size);
+    }
+    else
+    {
+        printf(">> rooster.wav NOT found\n");
+    }
+}

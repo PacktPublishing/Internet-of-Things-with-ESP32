@@ -1,0 +1,8 @@
+menu "HMC5883L"
+
+config HMC5883L_MEAS_TIMEOUT
+    int "Measurement timeout, microseconds"
+    default 6000
+    range 500 10000
+
+endmenu

@@ -1,0 +1,15 @@
+menu "Misc"
+
+config I2CDEV_TIMEOUT
+  int "I2C timeout"
+  default "100000"
+  help
+      I2C device timeout
+
+config I2C_FREQ_HZ
+  int "I2C bus frequency"
+  default "400000"
+  help
+      I2C bus frequency, default 400kHz
+	
+endmenu

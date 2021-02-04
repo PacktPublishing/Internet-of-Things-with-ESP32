@@ -1,0 +1,95 @@
+menu "OPTIGA(TM) Trust X config"
+
+	menu "I2C pinout config"
+
+		config PAL_I2C_INIT_ENABLE
+			bool "Switch on i2c init for OPTIGA(TM) Trust X"
+			default y
+			help
+				If you have more devices on the line and would like to disable 
+				i2c interface initilisation within the driver use this option
+
+		config PAL_I2C_MASTER_SCL_IO
+			int "SCL pin number"
+				depends on PAL_I2C_INIT_ENABLE
+			default 22
+			help
+				SCL pin configuration, corresponds to GPIO number on the board
+
+		config PAL_I2C_MASTER_SDA_IO
+			int "SDA pin number"
+				depends on PAL_I2C_INIT_ENABLE
+			default 21
+			help
+				SDA pin configuration, corresponds to GPIO number on the board
+
+		config PAL_I2C_MASTER_RESET
+			int "Software reset pin number"
+			default 23
+			help
+				Software reset pin configuration, corresponds to GPIO number on the board		
+				
+		config PAL_I2C_MASTER_NUM
+			int "Master Instance on ESP"
+				depends on PAL_I2C_INIT_ENABLE
+			range 0 1
+			default 0
+			help
+				I2C master instance number within ESP32 engine. 0 and 1 are supported
+
+		config PAL_I2C_MASTER_FREQ_HZ
+			int "I2C Baudrate"
+				depends on PAL_I2C_INIT_ENABLE
+			default 400000
+			help
+				Baudrate for the i2c interface. OPTIGA(TM) Trust X supports up to 1MHz	
+
+	endmenu #I2C Configuration
+
+	config OPTIGA_TRUST_X_CERT_SLOT
+		hex
+		default 0xE0E0 if OPTIGA_TRUST_X_CERT_SLOT0
+		default 0xE0E1 if OPTIGA_TRUST_X_CERT_SLOT1
+		default 0xE0E2 if OPTIGA_TRUST_X_CERT_SLOT2
+		default 0xE0E3 if OPTIGA_TRUST_X_CERT_SLOT3
+
+		choice 
+			prompt "Select a certificate slot for authentication"
+			default OPTIGA_TRUST_X_CERT_SLOT0
+			help
+				Four slots are supported, private keys 0xE0F0-0xE0F3 are used for these certificates
+
+			config OPTIGA_TRUST_X_CERT_SLOT0
+				bool "1st cert slot"
+			config OPTIGA_TRUST_X_CERT_SLOT1
+				bool "2nd cert slot"
+			config OPTIGA_TRUST_X_CERT_SLOT2
+				bool "3rd cert slot"
+			config OPTIGA_TRUST_X_CERT_SLOT3
+				bool "4th cert slot"
+		endchoice
+		
+	config OPTIGA_TRUST_X_PRIVKEY_SLOT
+		hex
+		default 0xE0F0 if OPTIGA_TRUST_X_PRIVKEY_SLOT0
+		default 0xE0F1 if OPTIGA_TRUST_X_PRIVKEY_SLOT1
+		default 0xE0F2 if OPTIGA_TRUST_X_PRIVKEY_SLOT2
+		default 0xE0F3 if OPTIGA_TRUST_X_PRIVKEY_SLOT3
+
+		choice 
+			prompt "Select a private key slot for authentication"
+			default OPTIGA_TRUST_X_PRIVKEY_SLOT0
+			help
+				By default should correspond to a certificate slot
+
+			config OPTIGA_TRUST_X_PRIVKEY_SLOT0
+				bool "1st private key slot"
+			config OPTIGA_TRUST_X_PRIVKEY_SLOT1
+				bool "2nd private key slot"
+			config OPTIGA_TRUST_X_PRIVKEY_SLOT2
+				bool "3rd private key slot"
+			config OPTIGA_TRUST_X_PRIVKEY_SLOT3
+				bool "4th private key slot"
+		endchoice
+
+endmenu  # OPTIGA(TM) Trust X
