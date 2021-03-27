@@ -12,10 +12,7 @@
 
 #define TFT_ROTATE_CW90 (1 & 0x03)
 
-extern "C"
-{
-    void app_main(void);
-}
+extern "C" void app_main(void);
 
 static void init_hw(void)
 {
@@ -40,7 +37,7 @@ static void display_reading(int temp, int hum)
     char buff[10];
     ssd1306_setFixedFont(comic_sans_font24x32_123);
     ssd1306_setColor(RGB_COLOR8(255, 0, 0));
-    
+
     sprintf(buff, "%d", temp);
     ssd1306_printFixed8(80, 21, buff, STYLE_BOLD);
 
