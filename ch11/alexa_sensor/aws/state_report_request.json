@@ -1,0 +1,20 @@
+{
+  "directive": {
+    "endpoint": {
+      "cookie": {},
+      "endpointId": "myhome_sensor1",
+      "scope": {
+        "token": "some_random_token_here",
+        "type": "BearerToken"
+      }
+    },
+    "header": {
+      "correlationToken": "a_correlation_token_here",
+      "messageId": "ad6578b0-0608-4963-9e28-7708942934be",
+      "name": "ReportState",
+      "namespace": "Alexa",
+      "payloadVersion": "3"
+    },
+    "payload": {}
+  }
+}

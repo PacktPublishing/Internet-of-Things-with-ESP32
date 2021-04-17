@@ -1,0 +1,50 @@
+{
+    "event": {
+        "header": {
+            "namespace": "Alexa.Discovery",
+            "name": "Discover.Response",
+            "payloadVersion": "3",
+            "messageId": "<message id>"
+        },
+        "payload": {
+            "endpoints": [{
+                "endpointId": "thing-name",
+                "manufacturerName": "iot-with-esp32",
+                "description": "Smart temperature sensor",
+                "friendlyName": "Temperature sensor",
+                "displayCategories": ["TEMPERATURE_SENSOR"],
+                "cookie": {},
+                "capabilities": [{
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.TemperatureSensor",
+                        "version": "3",
+                        "properties": {
+                            "supported": [{
+                                "name": "temperature"
+                            }],
+                            "proactivelyReported": true,
+                            "retrievable": true
+                        }
+                    },
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa.EndpointHealth",
+                        "version": "3",
+                        "properties": {
+                            "supported": [{
+                                "name": "connectivity"
+                            }],
+                            "proactivelyReported": true,
+                            "retrievable": true
+                        }
+                    },
+                    {
+                        "type": "AlexaInterface",
+                        "interface": "Alexa",
+                        "version": "3"
+                    }
+                ]
+            }]
+        }
+    }
+}

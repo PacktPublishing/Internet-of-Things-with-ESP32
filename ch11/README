@@ -1,0 +1,24 @@
+subscribe to: $aws/things/my-temp-sensor-1/shadow/get/accepted
+request to: $aws/things/my-temp-sensor-1/shadow/get
+
+subscribe to: $aws/things/my-temp-sensor-1/shadow/update/accepted
+update: $aws/things/my-temp-sensor-1/shadow/update
+{
+  "state": {
+    "reported": {
+      "temperature": 20
+    }
+  }
+}
+
+
+steps to create a smart home skill:
+https://developer.amazon.com/en-US/alexa/devices/connected-devices/development-resources/smart-home-skills/smart-home-skill-tutorial
+
+shadow topics:
+https://docs.aws.amazon.com/iot/latest/developerguide/reserved-topics.html#reserved-topics-shadow
+
+https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-mqtt.html#update-pub-sub-topic
+
+
+alexa account: https://alexa.amazon.com/

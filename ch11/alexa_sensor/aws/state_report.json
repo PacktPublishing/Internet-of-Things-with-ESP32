@@ -1,0 +1,37 @@
+{
+    "event": {
+        "header": {
+            "namespace": "Alexa",
+            "name": "StateReport",
+            "messageId": "<message id>",
+            "correlationToken": "<an opaque correlation token>",
+            "payloadVersion": "3"
+        },
+        "endpoint": {
+            "endpointId": "<thing-name>"
+        },
+        "payload": {}
+    },
+    "context": {
+        "properties": [{
+                "namespace": "Alexa.TemperatureSensor",
+                "name": "temperature",
+                "value": {
+                    "value": 20,
+                    "scale": "CELSIUS"
+                },
+                "timeOfSample": "2017-02-03T16:20:50.52Z",
+                "uncertaintyInMilliseconds": 1000
+            },
+            {
+                "namespace": "Alexa.EndpointHealth",
+                "name": "connectivity",
+                "value": {
+                    "value": "OK"
+                },
+                "timeOfSample": "2017-02-03T16:20:50.52Z",
+                "uncertaintyInMilliseconds": 0
+            }
+        ]
+    }
+}
