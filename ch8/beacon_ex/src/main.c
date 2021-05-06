@@ -52,7 +52,6 @@ void init(void)
     esp_bluedroid_enable();
 
     esp_ble_gap_register_callback(ble_gap_event_handler);
-    esp_ble_gap_set_device_name("my-esp32");
 }
 
 void app_main(void)
