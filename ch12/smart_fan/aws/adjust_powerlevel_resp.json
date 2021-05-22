@@ -1,0 +1,28 @@
+{
+    "event": {
+        "header": {
+            "namespace": "Alexa",
+            "name": "Response",
+            "messageId": "<message id>",
+            "correlationToken": "<an opaque correlation token>",
+            "payloadVersion": "3"
+        },
+        "endpoint": {
+            "scope": {
+                "type": "BearerToken",
+                "token": "<an OAuth2 bearer token>"
+            },
+            "endpointId": "thing-name"
+        },
+        "payload": {}
+    },
+    "context": {
+        "properties": [{
+            "namespace": "Alexa.PowerLevelController",
+            "name": "powerLevel",
+            "value": 52,
+            "timeOfSample": "2017-02-03T16:20:50.52Z",
+            "uncertaintyInMilliseconds": 500
+        }]
+    }
+}

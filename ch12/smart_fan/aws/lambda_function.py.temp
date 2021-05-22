@@ -1,0 +1,4 @@
+import json
+
+def lambda_handler(request, context):
+    pass
