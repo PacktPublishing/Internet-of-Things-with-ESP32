@@ -11,7 +11,7 @@
 
 
 typedef void (*light_changed_f)(bool);
-void init_hw(light_changed_f f);
+void init_hw(light_changed_f);
 bool is_light_low(void);
 
 #endif
