@@ -52,7 +52,7 @@ Click on the following link to see the Code in Action:
 [YouTube](https://www.youtube.com/playlist?list=PLeLcvrwLe187iw968S35Xf2P2NxsqEqBo)
 
 ### Related products 
-* Practical Internet of Th ings Security - Second Edition [[Packt]](https://www.packtpub.com/product/practical-internet-of-things-security-second-edition/9781788625821?utm_source=github&utm_medium=repository&utm_campaign=9781788625821) [[Amazon]](https://www.amazon.com/dp/178862582X)
+* Practical Internet of Things Security - Second Edition [[Packt]](https://www.packtpub.com/product/practical-internet-of-things-security-second-edition/9781788625821?utm_source=github&utm_medium=repository&utm_campaign=9781788625821) [[Amazon]](https://www.amazon.com/dp/178862582X)
 
 * IoT and Edge Computing for Architects - Second Edition [[Packt]](https://www.packtpub.com/product/iot-and-edge-computing-for-architects-second-edition/9781839214806?utm_source=github&utm_medium=repository&utm_campaign=9781839214806) [[Amazon]](https://www.amazon.com/dp/1839214805)
 
