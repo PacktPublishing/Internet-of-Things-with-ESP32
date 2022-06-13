@@ -1,7 +1,3 @@
-## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B14327?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
------
-For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
-
 # Developing IoT Projects with ESP32
 
 <a href="https://www.packtpub.com/product/developing-iot-projects-with-esp32/9781838641160?utm_source=github&utm_medium=repository&utm_campaign=9781838641160"><img src="https://static.packt-cdn.com/products/9781838641160/cover/smaller" alt="Developing IoT Projects with ESP32" height="256px" align="right"></a>
