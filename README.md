@@ -61,3 +61,7 @@ Click on the following link to see the Code in Action:
 Alongside his professional life, he also enjoys IoT as a hobby and loves sharing his knowledge and experience with young people as a STEM ambassador in the UK. He has 2 daughters, one is 14 years old and leads the fun projects at home, the other one is 1 year old and is expected to join them in developing projects soon.
 Vedat started his limited company in 2018 in London to provide consultancy services to his clients as well as developing his own IoT products. He still lives there with his family.
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781838641160">https://packt.link/free-ebook/9781838641160 </a> </p>
