@@ -10,7 +10,7 @@ This is the code repository for [Developing IoT Projects with ESP32](https://www
 **Automate your home or business with inexpensive Wi-Fi devices**
 
 ## What is this book about?
-Developing IoT Projects with ESP32 provides end-to-end coverage of secure data communication techniques from sensors to cloud platforms that will help you to develop production-grade IoT solutions by using the ESP32 SoC. You'll learn how to employ ESP32 in your IoT projects by interfacing with different sensors and actuators using different types of serial protocols.This book will show you how some projects require immediate output for end-users, and cover different display technologies as well as examples of driving different types of displays. The book features a dedicated chapter on cybersecurity packed with hands-on examples. 
+Developing IoT Projects with ESP32 provides end-to-end coverage of secure data communication techniques from sensors to cloud platforms that will help you to develop production-grade IoT solutions by using the ESP32 SoC. You'll learn how to employ ESP32 in your IoT projects by interfacing with different sensors and actuators using different types of serial protocols. This book will show you how some projects require immediate output for end-users, and cover different display technologies as well as examples of driving different types of displays. The book features a dedicated chapter on cybersecurity packed with hands-on examples. 
 
 This book covers the following exciting features: 
 * Explore advanced use cases like UART communication, sound and camera features, low-energy scenarios, and scheduling with an RTOS
